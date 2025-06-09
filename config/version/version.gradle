@@ -1,0 +1,54 @@
+ext.deps = [:]
+def versions = [:]
+
+/**
+ * 版本
+ */
+def build_versions = [:]
+build_versions.min_sdk = 21
+build_versions.target_sdk = 33
+build_versions.compile_sdk = 33
+ext.build_versions = build_versions
+
+/**
+ * 基础
+ */
+versions.core_ktx = "1.7.0"
+versions.appcompat = "1.4.0"
+versions.kotlin_jdk8 = "1.5.0"
+
+
+/**
+ * androidx
+ */
+versions.material = "1.5.0"
+versions.livedata = "2.4.1"
+versions.viewmodel = "2.5.0"
+versions.extensions = "2.2.0"
+
+/**
+ * androidx
+ */
+def androidx = [:]
+androidx.core = "androidx.core:core-ktx:$versions.core_ktx"
+androidx.appcompat = "androidx.appcompat:appcompat:$versions.appcompat"
+androidx.livedata = "androidx.lifecycle:lifecycle-livedata-ktx:$versions.livedata"
+androidx.viewmodel = "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.viewmodel"
+androidx.extensions = "androidx.lifecycle:lifecycle-extensions:$versions.extensions"
+deps.androidx = androidx
+
+/**
+ * kotlin
+ */
+def kotlin = [:]
+kotlin.jdk8 = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$versions.kotlin_jdk8"
+deps.kotlin = kotlin
+
+
+/**
+ * support
+ */
+def support = [:]
+support.material = "com.google.android.material:material:$versions.material"
+deps.support = support
+

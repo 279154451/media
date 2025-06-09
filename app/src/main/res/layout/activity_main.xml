@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_video"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="视频编码导出"/>
+
+    <Button
+        android:id="@+id/btn_webp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="webp编码导出" />
+    <Button
+        android:id="@+id/btn_gif"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="gif编码导出" />
+    <Button
+        android:id="@+id/btn_image"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Image编码导出" />
+</LinearLayout>

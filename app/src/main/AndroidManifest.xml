@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:name="com.qt.media.test.DemoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Android_GPB_Core">
+        <uses-native-library
+            android:name="libOpenCL.so"
+            android:required="true" />
+        <activity
+            android:name="com.qt.media.test.ui.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.qt.media.test.ui.VideoEncoderActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.qt.media.test.ui.WebpEncoderActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.qt.media.test.ui.GifEncoderActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.qt.media.test.ui.ImageEncoderActivity"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>
