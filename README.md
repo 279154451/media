@@ -1,5 +1,5 @@
 # mediaEnCoder
-MP4,GIF,WEBP编码录制实现
+Android平台MP4,GIF,WEBP编码录制实现
 
 ## MP4编码录制
 
